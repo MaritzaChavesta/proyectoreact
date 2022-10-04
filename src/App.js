@@ -1,12 +1,13 @@
  import React from "react";
  import './App.css';
- import Header from './Componentes/Header/Navbar'
+ import Navbar from './Componentes/Header/Navbar'
 
 
 const App = () =>{
+  const nombre = "Elizabeth";
   return (
     <>
-     <Header/>
+     <Navbar nombreUsuario={nombre} apellidoUsuario="ChavestF"/>
 
     </>
 ) ;

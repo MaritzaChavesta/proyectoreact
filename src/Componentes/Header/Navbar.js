@@ -1,22 +1,36 @@
 import React from 'react'
 import './Navbar.css'
-import logo from '../../assets/logo.PNG'
+import logo from '../../assets/logoo.png'
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import {styles} from './Navbar.style'
 
-export const Header = () => {
+
+export const Navbar = ({ nombreUsuario,apellidoUsuario }) => {
+ 
   return (
-    <header>
-        <img src={logo} alt='Tienda Elizabeth'/>
-        <h1>Titulo de mi pagina</h1>
-        <nav>
-            <a href=''>Categoria 1</a>
-            <a href=''>Categoria 2</a>
-            <a href=''>Categoria 3</a>
-            <a href=''>Categoria 4</a>
-        </nav>
-        <ShoppingCartIcon color="disabled" fontSize="large"/>
+    <header style={styles.container}>
+      <nav  style={styles.nav}>
+        <img style={styles.logo} src={logo} alt='Tienda Elizabeth'/>
+       
+     
+        <ul style={styles.categorias}>
+          <li > <a style={styles.enlaces} href=''>Mujer</a></li>
+          <li > <a style={styles.enlaces} href=''>Hombre</a></li>
+          <li > <a style={styles.enlaces} href=''>Ofertas</a></li>
+
+        </ul>
+        <h1  style={styles.usuario}>Bienvenido {nombreUsuario} {apellidoUsuario}</h1>
+       <ShoppingCartIcon /> 
+
+       
+      </nav>
+
+      
+        
     </header>
   )
 }
 
-export default Header
+export default Navbar
+
+

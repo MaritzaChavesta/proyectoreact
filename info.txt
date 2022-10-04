@@ -14,3 +14,17 @@ const MifuncionFlecha = () =>{
 - La funcion debe retornar algo (siempre debe ser un solo elemento)
 - Se debe exportar la funcion  (export default)
 - 
+
+Componentes
+-Props
+-States
+-Ciclo de vida
+- Metodos del ciclo de vida 
+
+const MiFuncion = (parametro) => {
+
+}
+
+function MiFuncion ( parametro){
+  
+}
