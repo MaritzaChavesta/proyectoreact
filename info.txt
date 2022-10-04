@@ -1,0 +1,16 @@
+Componentes Funcionales
+
+function Mifuncion (){
+  return null;
+}
+
+const MifuncionFlecha = () =>{
+  return null;
+}
+
+- Importar React
+- Debe tener una funcion
+- El nombre de la funcion debe empezar con mayusculas siempre
+- La funcion debe retornar algo (siempre debe ser un solo elemento)
+- Se debe exportar la funcion  (export default)
+- 
