@@ -1,6 +1,8 @@
-import React from 'react'
-import './Navbar.css'
-import logo from '../../assets/logoo.png'
+import React from 'react';
+import './Navbar.css';
+import { CarWidget } from './CarWidget';
+import logo from '../../assets/logoo.png';
+
 import {styles} from './Navbar.style'
 
 
@@ -19,13 +21,12 @@ export const Navbar = ({ nombreUsuario,apellidoUsuario }) => {
 
         </ul>
         <h1  style={styles.usuario}>Bienvenido {nombreUsuario} {apellidoUsuario}</h1>
-        
-    
-
-       
-      </nav>
-
       
+        <CarWidget/>
+      
+      </nav>
+      
+  
         
     </header>
   )
