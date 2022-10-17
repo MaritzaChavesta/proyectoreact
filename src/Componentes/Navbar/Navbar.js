@@ -1,9 +1,10 @@
 import React from 'react';
-import './Navbar.css';
-import { CarWidget } from './CarWidget';
+import '../Navbar/Navbar.css';
+import '../CarWidget/CarWidget.css';
+import { CarWidget } from '../CarWidget/CarWidget';
 import logo from '../../assets/logoo.png';
-
-import {styles} from './Navbar.style'
+import {styles} from '../Navbar/Navbar.style'
+import {style} from '../CarWidget/CarWidget.style';
 
 
 export const Navbar = ({ nombreUsuario,apellidoUsuario }) => {
@@ -22,7 +23,7 @@ export const Navbar = ({ nombreUsuario,apellidoUsuario }) => {
         </ul>
         <h1  style={styles.usuario}>Bienvenido {nombreUsuario} {apellidoUsuario}</h1>
       
-        <CarWidget/>
+        <ul style={style.carrito}><CarWidget/></ul>
       
       </nav>
       

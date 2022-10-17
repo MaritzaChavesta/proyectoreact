@@ -2,16 +2,26 @@
 export const styles = {
     container:{
       backgroundColor:'black',
-      maxWidth:'100%',
+      width:'100%',
+      position:'sticky',
+      zIndex:99,
+      height:80,
+
+ 
+      
     } ,
   
     nav:{
-      color: 'white',
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      height: 80,
-      margin: '0 10rem 0  10rem',
+      margin:'auto',
+      width:'100%',
+      maxWidth:1300,
+      height:'100%',
+      
+      alignItems:'center',
+      display:'flex',
+      flexWrap:'wrap',
+      justifyContent:'space-between',
+    
   
     },
     logo:{
@@ -32,10 +42,12 @@ export const styles = {
       fontSize: 16,
     },
     usuario:{
+        color:'white',
         fontSize: 14,
         textTransform: 'uppercase',
         fontWeight: 400,
-    }
+    },
+   
   
   } 
   
