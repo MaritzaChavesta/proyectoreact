@@ -1,8 +1,9 @@
  import React from "react";
  import './App.css';
  import Navbar from './Componentes/Navbar/Navbar';
- import ItemListContainer from './Componentes/Containers/ItemListContainer'; 
-/*  import ComponentesEstados from './ComponentesEstados'; */
+ import {ItemListContainer} from './Containers/ItemListContainer';
+ import {Usuarios} from './Usuarios';
+
 
 
 
@@ -12,8 +13,9 @@ const App = () =>{
   return (
     <>
      <Navbar nombreUsuario={nombre} apellidoUsuario="ChavestF"/>
-    <ItemListContainer greeting={mensaje} /> 
-  {/*   <ComponentesEstados/> */}
+     <ItemListContainer greeting={mensaje} /> 
+     <Usuarios/>
+
     
     </>
 );

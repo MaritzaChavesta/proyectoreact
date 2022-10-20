@@ -29,3 +29,8 @@ function MiFuncion ( parametro){
   
 }
 
+hooks
+-Siempre comuenzan con use
+-Siempre se declaran de un Componentes
+-Son funciones 
+-No se pueden declarar las condicionesles(if)
